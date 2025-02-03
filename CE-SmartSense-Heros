@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE SmartSense Heros - Samsung Elite Force</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --samsung-blue: #1428a0;
+            --hero-black: #000000;
+            --badge-white: #ffffff;
+            --accent-red: #e4002b;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: var(--hero-black);
+            color: var(--badge-white);
+        }
+
+        /* Samsung Warrior Header */
+        header {
+            background: linear-gradient(90deg, var(--hero-black) 70%, var(--samsung-blue) 100%);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent-red);
+        }
+
+        .legacy-badge {
+            background: var(--accent-red);
+            padding: 10px 20px;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+
+        /* Timeline of Achievements */
+        .timeline {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .timeline-item {
+            background: rgba(20,40,160,0.2);
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent-red);
+        }
+
+        /* Team Profile Cards */
+        .leader-card {
+            border: 2px solid var(--samsung-blue);
+            padding: 30px;
+            margin: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .leader-card::before {
+            content: "SAMSUNG WARRIOR";
+            position: absolute;
+            top: -15px;
+            left: -50px;
+            background: var(--accent-red);
+            transform: rotate(-45deg);
+            padding: 5px 50px;
+            font-size: 0.8rem;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://images.samsung.com/is/image/samsung/assets/global/about-us/brand/logo/360_197_1.png" 
+                 alt="Samsung Logo" 
+                 style="height:40px;filter:brightness(0) invert(1)">
+            <h1>CE SmartSense Heros</h1>
+        </div>
+        <div class="legacy-badge">
+            Since 2009 | Undefeated Champions
+        </div>
+    </header>
+
+    <section class="timeline">
+        <div class="timeline-item">
+            <h3>2009 - Founding Era</h3>
+            <p>Established by Mr. Song with 5 dedicated members</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2012 - Market Breakthrough</h3>
+            <p>Achieved 150% sales target for Samsung LED TVs</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2020 - Market Leadership</h3>
+            <p>Secured #1 position in MENA region for Samsung HA products</p>
+        </div>
+    </section>
+
+    <div class="leader-card">
+        <h2>Mr. Song</h2>
+        <p>"The Godfather of Samsung Retail"</p>
+        <p>CEO & Strategic Visionary</p>
+        <small>Leading the charge since 2009</small>
+    </div>
+
+    <div class="leader-card">
+        <h2>M. Sonbaty</h2>
+        <p>"The Field Marshal"</p>
+        <p>Head of Operations</p>
+        <small>Driving excellence since 2011</small>
+    </div>
+</body>
+</html>
